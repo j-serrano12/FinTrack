@@ -1,4 +1,4 @@
-package org.fintrack.model;
+package org.fintrack.entity;
 
 import jakarta.persistence.*;
 

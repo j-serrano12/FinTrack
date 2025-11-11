@@ -1,8 +1,8 @@
-package org.fintrack.model;
+package org.fintrack.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
 
-import javax.annotation.processing.Generated;
 import java.util.List;
 
 @Entity
@@ -13,7 +13,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @NotEmpty(message = "Needs to have an username")
     private String username;
+    @NotEmpty(message = "Needs to have a password")
     private String password;
     private String email;
     private String firstName;
@@ -78,4 +80,5 @@ public class User {
     public void setTransactions(List<Transaction> transactions) {
         this.transactions = transactions;
     }
+
 }

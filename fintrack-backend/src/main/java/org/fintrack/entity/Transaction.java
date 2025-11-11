@@ -1,7 +1,6 @@
-package org.fintrack.model;
+package org.fintrack.entity;
 
 import jakarta.persistence.*;
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 import java.time.LocalDate;
 
