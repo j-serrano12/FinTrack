@@ -21,7 +21,7 @@ public class Transaction {
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "categorie_id")
+    @JoinColumn(name = "category_id")
     private Category category;
 
     public long getId() {
