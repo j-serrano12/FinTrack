@@ -1,0 +1,38 @@
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java/Maven (backend)
+fintrack-backend/target/
+fintrack-backend/.mvn/
+fintrack-backend/mvnw
+fintrack-backend/mvnw.cmd
+*.class
+*.jar
+*.war
+*.ear
+
+# Node.js/React (frontend)
+fintrack-frontend/node_modules/
+fintrack-frontend/dist/
+fintrack-frontend/.vite/
+fintrack-frontend/build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and sensitive files
+*.env
+*.env.local
+*.env.production
+application-local.properties
+application-prod.properties
