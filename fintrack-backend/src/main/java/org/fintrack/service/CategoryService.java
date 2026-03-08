@@ -7,6 +7,8 @@ import org.fintrack.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CategoryService {
 
@@ -24,5 +26,9 @@ public class CategoryService {
 
     public Category createCategory(Category newCategory){
         return categoryRepository.save(newCategory);
+    }
+
+    public List<Category> findAllCategories(){
+        return categoryRepository.findAll();
     }
 }
