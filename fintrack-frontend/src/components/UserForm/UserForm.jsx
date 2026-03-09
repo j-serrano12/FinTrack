@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./UserForm.module.css";
 
 const UserForm = () => {
     const [formData, setFormData] = useState({
@@ -47,14 +48,14 @@ const UserForm = () => {
 
 
     return (
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', maxWidth: '400px', gap: '10px' }}>
+        <form className={styles.container} onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', maxWidth: '400px', gap: '10px' }}>
             <h2>Register User</h2>
             <input name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleChange} />
             <input name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleChange} />
             <input name="username" placeholder="Username" value={formData.name} onChange={handleChange} />
             <input name="email" type="email" placeholder="Email" value={formData.email} onChange={handleChange} />
             <input name="password" type="password" placeholder="Password" value={formData.password} onChange={handleChange} />
-            <button type="submit">Create User</button>
+            <button className={styles.primaryButton} type="submit">Create User</button>
         </form>
     );
 };
