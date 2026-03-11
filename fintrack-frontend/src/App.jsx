@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import './App.css'; // Changed to standard import
+import './App.css';
 import UserForm from './components/UserForm/UserForm.jsx';
 import { Container } from 'react-bootstrap';
 
