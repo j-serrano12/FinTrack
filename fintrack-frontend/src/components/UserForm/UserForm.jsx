@@ -36,7 +36,7 @@ const UserForm = () => {
                 console.log('Success', data);
                 alert("User created successfully");
 
-                // Optional: Clear the form after success
+
                 setFormData({ username: '', email: '', password: '', firstName: '', lastName: '' });
             } else {
                 console.error('Server error', response.statusText);

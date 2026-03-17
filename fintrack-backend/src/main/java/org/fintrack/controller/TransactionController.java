@@ -22,6 +22,10 @@ public class TransactionController {
     public List<Transaction> getTransactions(){
         return transactionService.findAllTransactions();
     }
+    @GetMapping("/{id}")
+    public Transaction getTransactionById(@RequestParam Long id){
+        return transactionService.findTransactionById(id);
+    }
     @PostMapping
     public Transaction createTransaction(@RequestBody Transaction newTransaction){
         return transactionService.createTransaction(newTransaction);

@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+// import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import './App.css';
 import UserForm from './components/UserForm/UserForm.jsx';
 import { Container } from 'react-bootstrap';
 
 function App() {
     return (
-
         <div className="App min-vh-100 bg-light">
             <Container className="py-5">
                 <h1 className="text-center display-4 fw-bold text-primary">
